@@ -1,16 +1,18 @@
+This project is forked cause the original project author terminated the maintenance.
+
 # textlint-rule-ng-word
 [textlint](https://github.com/textlint/textlint) rule that check NG word.
 
 ## Installation
 
 ```
-npm install textlint-rule-ng-word
+npm install @shrkw/textlint-rule-ng-word
 ```
 
 ## Usage
 
 ```
-npm install -g textlint textlint-rule-ng-word
+npm install -g textlint @shrkw/textlint-rule-ng-word
 textlint --rule ng-word README.md
 ```
 
