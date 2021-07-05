@@ -2,9 +2,9 @@
   "name": "textlint-rule-ng-word",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KeitaMoromizato/textlint-rule-ng-word.git"
+    "url": "https://github.com:shrkw/textlint-rule-ng-word.git"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "textlint rule that check NG words",
   "main": "lib/ng-word.js",
   "scripts": {
@@ -21,10 +21,9 @@
     "textlint"
   ],
   "bugs": {
-    "url": "https://github.com/KeitaMoromizato/textlint-rule-ng-word/issues"
+    "url": "https://github.com:shrkw/textlint-rule-ng-word/issues"
   },
-  "author": "Keita Moromizato",
-  "email": "keita_moromizato@relationsgroup.co.jp",
+  "author": "shrkw",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.34",
