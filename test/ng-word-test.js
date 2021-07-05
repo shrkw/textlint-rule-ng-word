@@ -21,7 +21,7 @@ describe('ng-word', function () {
       textlint.lintMarkdown('この文章は不適切な文字xxxを含みます。').then(result => {
 
         assert(result.messages.length === 1);
-        assert(result.messages[0].message === 'Document contains NG word "xxx".');
+        assert(result.messages[0].message === 'contains NG word "xxx".');
         assert(result.messages[0].line === 1);
         assert(result.messages[0].column === 12);
 
@@ -34,7 +34,7 @@ describe('ng-word', function () {
       textlint.lintMarkdown(sample).then(result => {
 
         assert(result.messages.length === 1);
-        assert(result.messages[0].message === 'Document contains NG word "xxx".');
+        assert(result.messages[0].message === 'contains NG word "xxx".');
         assert(result.messages[0].line === 2);
         assert(result.messages[0].column === 7);
 
@@ -53,7 +53,7 @@ describe('ng-word', function () {
       it('returns multiple errors', (done) => {
         textlint.lintMarkdown('この文章は不適切な文字xxxとxxxを含みます。').then(result => {
           assert(result.messages.length === 2);
-          assert(result.messages[0].message === 'Document contains NG word "xxx".');
+          assert(result.messages[0].message === 'contains NG word "xxx".');
           assert(result.messages[0].line === 1);
           assert(result.messages[0].column === 12);
           assert(result.messages[1].line === 1);
